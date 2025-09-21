@@ -1,0 +1,160 @@
+/* =========================
+   General Page Styles
+========================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navbar Customization
+========================= */
+
+.nav-pill-custom {
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+}
+
+.nav-pill-custom:hover {
+  background-color: #0d6efd;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
+}
+
+.nav-link-custom {
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link-custom:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.logo-spin {
+  animation: spinLogo 6s linear infinite;
+}
+
+@keyframes spinLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   Hero Section Animation
+========================= */
+
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Pricing Cards
+========================= */
+
+.card-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.card-popular {
+  border: 2px solid #0d6efd;
+}
+
+.popular-badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   Buttons Hover Effect
+========================= */
+
+.btn-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
+}
+
+/* =========================
+   Compare Plans Table
+========================= */
+
+.marked-check {
+  color: #0d6efd;
+  transition: transform 0.3s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table td i:hover {
+  transform: scale(1.3);
+}
+
+/* =========================
+   FAQ Section (Accordion)
+========================= */
+
+.accordion-button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.accordion-button:hover {
+  transform: translateX(5px);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer-link {
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0d6efd !important;
+  padding-left: 5px;
+}
